@@ -66,7 +66,7 @@ npm run build
 
 ## Demo
 
-Check out the live version of the app: [Live Demo Link](https://your-deployed-link.com)
+Check out the live version of the app: [Live Demo Link](https://assignment-brainstrome.netlify.app/)
 
 ## Code Quality & Commit Messages
 
