@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import axios from "axios";
-import { ArrowUpDown, Check, ChevronsUpDown } from "lucide-react";
+import { ArrowUpDown, Check, ChevronsUpDown, Search } from "lucide-react";
 import { setSelectedArea, setSortOrder } from "../store/filterSlice";
 import type { RootState, Area } from "../types";
 import { Popover, PopoverContent, PopoverTrigger } from "./ui/popover";
@@ -46,8 +46,18 @@ const Filters: React.FC = () => {
   };
 
   return (
-    <div className="container mx-auto px-4 py-6">
-      <div className="flex flex-wrap gap-4 items-center">
+    <div className="flex flex-col mx-auto p-4 gap-4">
+      <div className="sm:hidden flex grow max-w-xl ">
+        <div className="relative flex grow">
+          <input
+            type="text"
+            placeholder="Search for food..."
+            className="w-full px-4 py-2 border rounded-lg bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary"
+          />
+          <Search className="absolute right-3 top-2.5 h-5 w-5 text-muted-foreground" />
+        </div>
+      </div>
+      <div className="flex grow flex-wrap gap-4 items-center max-sm:justify-between">
         {/* Filter by Area using Combobox */}
         <Popover open={open} onOpenChange={setOpen}>
           <PopoverTrigger asChild>

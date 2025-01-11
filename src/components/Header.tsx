@@ -8,11 +8,11 @@ const Header: React.FC = () => {
     <header className="sticky top-0 z-50 bg-background border-b">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
         <div className="flex items-center gap-2">
-          <Menu className="h-6 w-6 text-primary" />
+          <Menu className="h-6 w-6 text-primary sm:hidden" />
           <h1 className="text-2xl font-bold text-primary">Food Menu</h1>
         </div>
 
-        <div className="flex-1 max-w-xl mx-8">
+        <div className="max-sm:hidden flex-1 max-w-xl mx-2 sm:mx-8">
           <div className="relative">
             <input
               type="text"
