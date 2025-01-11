@@ -1,7 +1,7 @@
-import React from 'react';
-import { Search, Menu } from 'lucide-react';
-import { ThemeToggle } from './ui/theme-toggle';
-import { Button } from './ui/button';
+import * as React from "react";
+import { Search, Menu } from "lucide-react";
+import { ThemeToggle } from "./ui/theme-toggle";
+import { Button } from "./ui/button";
 
 const Header: React.FC = () => {
   return (
@@ -11,7 +11,7 @@ const Header: React.FC = () => {
           <Menu className="h-6 w-6 text-primary" />
           <h1 className="text-2xl font-bold text-primary">Food Menu</h1>
         </div>
-        
+
         <div className="flex-1 max-w-xl mx-8">
           <div className="relative">
             <input
