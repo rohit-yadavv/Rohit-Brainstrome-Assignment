@@ -1,5 +1,9 @@
 # Food Menu App - Frontend Developer Assignment
 
+Live Video Link: https://drive.google.com/file/d/1RgteuHMEMkRsbvEPt4MGJjiGhOzPap9T/view 
+
+Live App Link: https://assignment-brainstrome.netlify.app/
+
 ## Overview
 
 This is a Food Menu Webpage built using **React**, following a technical assignment for the role of Frontend Developer. The application allows users to filter and view food items from various areas. The app is fully responsive and mimics the design and theme of Swiggy with a clean and modern user interface.
@@ -67,6 +71,8 @@ npm run build
 ## Demo
 
 Check out the live version of the app: [Live Demo Link](https://assignment-brainstrome.netlify.app/)
+
+Check out the video of the live app: [Video Link](https://drive.google.com/file/d/1RgteuHMEMkRsbvEPt4MGJjiGhOzPap9T/view)
 
 ## Code Quality & Commit Messages
 
